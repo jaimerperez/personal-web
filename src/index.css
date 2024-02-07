@@ -1,47 +1,99 @@
+
+:root {
+  --background-color: indigo;
+  --margin-measure: 30px
+}
+
 body {
-  background: rgb(156, 156, 209);
+  background: rgb(230, 230, 235);
   color: rgb(0, 0, 0);
-  min-height: 100vh;
   font-family:"MarkPro-Bold", sans-serif;
+  margin: 0;
+}
+header{
+  position: fixed;
+  top: 0;
+  background: rgb(230, 230, 235);
+  display:flex;
+  justify-content: space-between;
+  width: 100vw;
   
 }
-
-header{
-display:flex;
-justify-items: center;
-justify-content: space-between;
-
-font-weight: bold;
-margin:5vh;
-font-size: 2vh;
-}
 main{
-  font-size: 8vh;
+  padding-top: 90px;
+  margin: var(--margin-measure);
 }
 section{
-  width: 100%;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  
+}
+article{
+  width: 100%;
+}
+h1{
+  font-size: 2.3222222222222223rem;
+  margin: var(--margin-measure);
 }
 h2{
   width: 50%;
-  font-size: 2.7222222222222223rem;
+  font-size: 2.3222222222222223rem;
   line-height: 3.3333333333333335rem;
+  text-align: start;
 }
 .h2-content-secondary{
   font-family: "TiemposHeadline-Light", sans-serif;
   font-weight: 400;
   font-style: normal;
-  justify-content: flex-end;
   float: right;
+}
+.container-proyects{
+  display: flex;
+}
+.img-container1, .img-container2{
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+.img1-1, .img1-2, .img2-1, .img2-2 {
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+  height:600px;
+  width:600px;
+}
+.img1-2, .img2-2 {
+  opacity: 0; /* Inicialmente, la segunda imagen está oculta */
+  position:absolute;
+}
+.img-container1:hover .img1-1, .img2-1 {
+  opacity: 0; /* Cuando el mouse pasa por encima, ocultamos la primera imagen */
+}
+
+.img-container1:hover .img1-2 , .img2-2 {
+  opacity: 1; /* Cuando el mouse pasa por encima, mostramos la segunda imagen */
+}
+.arrow-icon{
+  width: 20px;
+  height: 20px;
+}
+.title-img1{
+  position: absolute;
+  bottom: -20px;
+}
+span{
+  font-style: italic;
 }
 a{
   color: rgb(12, 12, 12);
   text-decoration: none;
   font-weight: bold;
 }
+a:hover{
+  color:rgb(149, 160, 169)  ;
+}
 footer{
   display: flex;
   justify-content: space-between;
+  margin: var(--margin-measure);
 }
