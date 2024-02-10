@@ -8,7 +8,7 @@ const base = mode === "production" && isGitHubPages ? "/" + folderName : "/";
 
 export default defineConfig({
   root: "src",
-  base,
+  base: "/personal-web/",
   mode,
   envDir: "../",
   publicDir: "../public",
