@@ -1,0 +1,135 @@
+
+:root {
+  --background-color: indigo;
+  --margin-measure: 30px;
+  --margin-img-separation: 5px;
+  --font-size: 30px;
+}
+
+body {
+  background: rgb(230, 230, 235);
+  color: rgb(0, 0, 0);
+  font-family:"MarkPro-Bold", sans-serif;
+  margin: 0;
+}
+header{
+  position: fixed;
+  top: 0;
+  background: rgb(230, 230, 235);
+  display:flex;
+  justify-content: space-between;
+  width: 100vw;
+  
+}
+main{
+  padding-top: 90px;
+  margin: var(--margin-measure);
+}
+.socialmedia-refs{
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size);
+}
+.blank-space{
+  height: 40vh;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+section{
+  display: flex;
+  
+}
+article{
+  width: 100%;
+}
+h1{
+  font-size: 2.3222222222222223rem;
+  margin: var(--margin-measure);
+}
+h2{
+  width: 50%;
+  font-size: 2.3222222222222223rem;
+  line-height: 3.3333333333333335rem;
+  text-align: start;
+}
+.h2-content-secondary{
+  font-family: "TiemposHeadline-Light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  float: right;
+}
+.h2-content{
+  width: 100%;
+  font-family: "TiemposHeadline-Light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  float: right;
+  text-indent: 50px;
+}
+.aboutme-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh;
+}
+.container-proyects{
+  display: flex;
+  width: 100%;
+
+}
+.img-container{
+  display: flex;
+  align-items: start;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-right: var(--margin-img-separation);
+}
+.img1, .img2 {
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+  height:600px;
+  width:800px;
+}
+#small-img1 {
+  width: auto;
+  height: 50%;
+  aspect-ratio: 781 / 370;
+}
+.img1{
+  opacity: 0; /* Inicialmente, la segunda imagen está oculta */
+  position:absolute;
+}
+.img-container:hover .img2 {
+  opacity: 0; /* Cuando el mouse pasa por encima, ocultamos la primera imagen */
+}
+
+.img-container:hover .img1 {
+  opacity: 1; /* Cuando el mouse pasa por encima, mostramos la segunda imagen */
+}
+.arrow-icon{
+  width: 20px;
+  height: 20px;
+}
+.title-img1{
+  position: absolute;
+  bottom: -20px;
+}
+span{
+  font-style: italic;
+}
+a{
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  color:rgb(149, 160, 169)  ;
+}
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  height: 30vh;
+  flex-direction: column;
+  margin: var(--margin-measure);
+}
