@@ -6,10 +6,19 @@
   --font-size: 30px;
 }
 
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/assets/fonts/MaisonNeueExtendedTRIAL-BlackItalic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueHaas';
+  src: url('/assets/fonts/NeueHaasUnica-ExtraLight.ttf') format('opentype');
+}
+
 body {
   background: rgb(230, 230, 235);
   color: rgb(0, 0, 0);
-  font-family:"MarkPro-Bold", sans-serif;
+  font-family:"MaisonNeue", sans-serif;
   margin: 0;
 }
 header{
@@ -48,20 +57,21 @@ h1{
   margin: var(--margin-measure);
 }
 h2{
+  font-family: 'NeueHaas';
   width: 50%;
   font-size: 2.3222222222222223rem;
   line-height: 3.3333333333333335rem;
   text-align: start;
 }
 .h2-content-secondary{
-  font-family: "TiemposHeadline-Light", sans-serif;
+  font-family: "NeueHaas", sans-serif;
   font-weight: 400;
   font-style: normal;
   float: right;
 }
 .h2-content{
   width: 100%;
-  font-family: "TiemposHeadline-Light", sans-serif;
+  font-family: "NeueHaas", sans-serif;
   font-weight: 400;
   font-style: normal;
   float: right;
