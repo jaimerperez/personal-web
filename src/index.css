@@ -46,8 +46,7 @@ main{
   justify-content: end;
 }
 section{
-  display: flex;
-  
+  display: flex; 
 }
 article{
   width: 100%;
@@ -62,6 +61,9 @@ h2{
   font-size: 2.3222222222222223rem;
   line-height: 3.3333333333333335rem;
   text-align: start;
+}
+img{
+  z-index: -1;
 }
 .h2-content-secondary{
   font-family: "NeueHaas", sans-serif;
@@ -85,7 +87,12 @@ h2{
 .container-proyects{
   display: flex;
   width: 100%;
-
+  margin-top: 10vh;
+}
+.section-proyect{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh;
 }
 .img-container{
   display: flex;
@@ -99,7 +106,7 @@ h2{
   object-fit: cover;
   transition: opacity 0.3s ease-in-out;
   height:600px;
-  width:800px;
+  width:800px; 
 }
 #small-img1 {
   width: auto;
@@ -124,6 +131,7 @@ h2{
 .title-img1{
   position: absolute;
   bottom: -20px;
+  z-index: -1;
 }
 span{
   font-style: italic;
